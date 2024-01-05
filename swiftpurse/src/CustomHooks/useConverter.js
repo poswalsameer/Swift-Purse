@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 
 
-//the main API that is used to convert the currency
-let apiUrl = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${currency}.json`;
+
 
 function useCurrency(currency){
+
+        //the main API that is used to convert the currency
+        let apiUrl = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${currency}.json`;
 
         const [data, setData] = useState({});
 
